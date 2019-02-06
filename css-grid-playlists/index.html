@@ -21,13 +21,16 @@
             // grid-auto-rows: minmax(200px, auto);
             // grid-column-gap: 10px;
             // grid-row-gap: 10px;
-            grid-gap: 10px;
+
 
 
             grid-template-columns: repeat(3, 1fr);
-            // grid-template-rows: repeat(4, minmax(150px, auto));
+            grid-template-rows: repeat(4, minmax(150px, auto));
+            grid-gap: 10px;
             max-width: 960px;
             margin: 0 auto;
+            // align-items: start;
+            // justify-items: end;
         }
         #content div {
             background: #3bbced;
@@ -37,6 +40,24 @@
         #content div:nth-child(even) {
             background: #777;
         }
+
+
+        .one {
+            justify-self: start;
+            align-self: end;
+        }
+
+        .two {
+            align-self: center;
+            justify-self: center;
+        }
+
+        .three {
+            align-self: start;
+            justify-self: start;
+        }
+
+
         /*
         .one {
             // grid-column-start: 1;
@@ -64,7 +85,7 @@
 
 
 
-        .nested {
+        /* .nested {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-gap: 10px;
@@ -74,22 +95,22 @@
             border: 1px solid #fff;
             padding: 20px;
             margin: 0;
-        }
+        } 8/
     </style>
 </head>
 <body>
     <div id="content">
-        <!-- <div class="one">1</div>
+        <div class="one">1</div>
         <div class="two">2</div>
         <div class="three">3</div>
         <div class="four">4</div>
         <div class="five">5</div>
-        <div class="six">6</div> -->
+        <div class="six">6</div>
         <!-- <div>7</div>
         <div>8</div>
         <div>9</div> -->
 
-        <div>1</div>
+        <!-- <div>1</div>
         <div>2</div>
         <div>3</div>
         <div class="nested">
@@ -101,7 +122,7 @@
 
         <div>5</div>
         <div>6</div>
-
+ -->
 
     </div>
 </body>
